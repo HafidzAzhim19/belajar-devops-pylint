@@ -1,15 +1,19 @@
-import os, sys, math
+"""Contoh kode yang telah diperbaiki agar memenuhi standar Pylint."""
 
-x = 10
 
-def Bad_Function_Name( A, B, C, D, E, F ):
- global x
- l = 1; O = 0
- if A == True:
-  if B == False:
-   if C == None:
-    try: print(eval("A + B")); res = E[0] + F + l + O
-    except: pass
- else: return None
+def calculate_result(first_value, second_value):
+    """Menghitung hasil penjumlahan dua nilai."""
+    return first_value + second_value
 
-Bad_Function_Name(True, False, None, 1, [2], 3)
+
+def main():
+    """Menjalankan program utama."""
+    first_value = 10
+    second_value = 20
+
+    result = calculate_result(first_value, second_value)
+    print(f"Hasil perhitungan: {result}")
+
+
+if __name__ == "__main__":
+    main()
